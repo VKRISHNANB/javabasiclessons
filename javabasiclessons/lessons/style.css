@@ -1,0 +1,29 @@
+body {
+    margin: 50px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    opacity: 1; 
+    filter: none; 
+  }
+  .nav-links {
+    position: sticky;
+    top: 0;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+    /* Ensures the menu stays on top of other elements */
+    /* text-align: right; */
+  
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .title{
+    color: #0b232d;
+  }
+  
