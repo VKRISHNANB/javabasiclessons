@@ -11,6 +11,7 @@ body {
     position: sticky;
     top: 0;
     color: white;
+  line-height: 1.6; 
     padding: 10px 0;
     z-index: 1000;
     /* Ensures the menu stays on top of other elements */
@@ -20,7 +21,7 @@ body {
   
   .nav-links a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     margin: 0 10px;
   }
   .title{
