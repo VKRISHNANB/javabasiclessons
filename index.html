@@ -6,25 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="javabasiclessons/lessons/style.css">
-
+    <link rel="stylesheet" href="javabasiclessons/lessons/tree.css">
+    <script>
+        function loadPage(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+                });
+        }
+    </script>
 </head>
 
-<body style="background-image: url(javabasiclessons/lessons/homebackground.jpg);color: #efbd06;">
-    <h1>Java basic lessons</h1>
-    <nav class="nav-links">
-    <div>
-        <a href="javabasiclessons/lessons/day1.html" target="_blank" rel="noopener noreferrer">Lesson 1 Introduction</a>
-    </div>
-    <div>
-        <a href="javabasiclessons/lessons/day2.html" target="_blank" rel="noopener noreferrer">Lesson 2 Data Types</a>
-    </div>
-    <div>
-        <a href="javabasiclessons/lessons/day3.html" target="_blank" rel="noopener noreferrer">Lesson 3 Primitive types Part1</a>
-    </div>
-    <div>
-        <a href="javabasiclessons/lessons/day4.html" target="_blank" rel="noopener noreferrer">Lesson 4 Primitive types Part2</a>
-    </div>
+<body >
+    
+    <div id="tree" class="tree">    
+        <nav class="nav-links">
+        <h3>Java basics</h3>
+        <ul>
+            <li> <a href="javabasiclessons/lessons/day1.html'" onclick="loadPage('javabasiclessons/lessons/day1.html');  return false;" rel="noopener noreferrer">Lesson 1 Introduction</a></li>
+            <li><a href="javabasiclessons/lessons/day2.html" onclick="loadPage('javabasiclessons/lessons/day2.html');  return false;">Lesson 2 Data Types</a> </li>
+        <li>
+            <a href="javabasiclessons/lessons/day3.html" onclick="loadPage('javabasiclessons/lessons/day3.html');  return false;"
+                rel="noopener noreferrer">Lesson 3 Primitive types Part1</a>
+        </li>
+        <li> <a href="javabasiclessons/lessons/day4.html" onclick="loadPage('javabasiclessons/lessons/day4.html');  return false;"
+                rel="noopener noreferrer">Lesson 4 Primitive
+                types Part2</a></li>
+        </ul>
     </nav>
+    </div>
+    <div id="content" >
+        <!-- Loaded content will appear here -->
+    </div>
+    <script src="javabasiclessons/lessons/tree.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tree of Links</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        #tree {
+            width: 200px;
+            border-right: 1px solid #000;
+            padding: 10px;
+        }
+
+        #content {
+            flex-grow: 1;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+    <script>
+        function loadPage(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+                });
+        }
+    </script>
+</head>
+
+<body>
+    <div id="tree">
+        <ul>
+            <li> <a href="day1.html'" onclick="loadPage('day1.html');  return false;" rel="noopener noreferrer">Lesson 1 Introduction</a></li>
+            <li><a href="day2.html" onclick="loadPage('day2.html');  return false;">Lesson 2 Data Types</a> </li>
+        <li>
+            <a href="day3.html" onclick="loadPage('day3.html');  return false;"
+                rel="noopener noreferrer">Lesson 3 Primitive types Part1</a>
+        </li>
+        <li> <a href="day4.html" onclick="loadPage('day4.html');  return false;"
+                rel="noopener noreferrer">Lesson 4 Primitive
+                types Part2</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <!-- Loaded content will appear here -->
+    </div>
+</body>
+
+</html>
