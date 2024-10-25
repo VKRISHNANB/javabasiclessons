@@ -7,39 +7,19 @@
     <title>Home</title>
     <link rel="stylesheet" href="javabasiclessons/lessons/css/style.css">
     <link rel="stylesheet" href="javabasiclessons/lessons/css/tree.css">
-    <script>
-        function loadPage(url) {
-            const timestamp = new Date().getTime(); // Generate a unique query string
-            fetch(url+'?v=' + timestamp)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('content').innerHTML = data;
-                });
-        }
-    </script>
 </head>
 
 <body onload="loadPage('javabasiclessons/lessons/home.html');  return false;">
     
-    <div id="tree" class="tree">    
-        <nav class="tree-nav-links ">
-        <h3>Java basics</h3>
-        <ul>
-            <li> <a href="javabasiclessons/lessons/day1.html" onclick="loadPage('javabasiclessons/lessons/day1.html');  return false;" rel="noopener noreferrer">Lesson 1 Introduction</a></li>
-            <li><a href="javabasiclessons/lessons/day2.html" onclick="loadPage('javabasiclessons/lessons/day2.html');  return false;">Lesson 2 Data Types</a> </li>
-        <li>
-            <a href="javabasiclessons/lessons/day3.html" onclick="loadPage('javabasiclessons/lessons/day3.html');  return false;"
-                rel="noopener noreferrer">Lesson 3 Primitive types Part1</a>
-        </li>
-        <li> <a href="javabasiclessons/lessons/day4.html" onclick="loadPage('javabasiclessons/lessons/day4.html');  return false;"
-                rel="noopener noreferrer">Lesson 4 Primitive
-                types Part2</a></li>
-        </ul>
-    </nav>
+    <div id="tree" class="tree" >    
+        <!-- Loaded Tree will appear here -->
+       
     </div>
-    <div id="content" >
+    <div id="content" >loadPage('javabasiclessons/lessons/day1.html','content');  return false;"
         <!-- Loaded content will appear here -->
     </div>
+    <script src="javabasiclessons/lessons/scripts/index.js"></script>
+
     <script src="javabasiclessons/lessons/scripts/tree.js"></script>
 
 </body>
