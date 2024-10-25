@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="javabasiclessons/lessons/css/tree.css">
     <script>
         function loadPage(url) {
-            fetch(url)
+            const timestamp = new Date().getTime(); // Generate a unique query string
+            fetch(url+'?v=' + timestamp)
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('content').innerHTML = data;
@@ -24,7 +25,7 @@
         <nav class="tree-nav-links ">
         <h3>Java basics</h3>
         <ul>
-            <li> <a href="javabasiclessons/lessons/day1.html'" onclick="loadPage('javabasiclessons/lessons/day1.html');  return false;" rel="noopener noreferrer">Lesson 1 Introduction</a></li>
+            <li> <a href="javabasiclessons/lessons/day1.html" onclick="loadPage('javabasiclessons/lessons/day1.html');  return false;" rel="noopener noreferrer">Lesson 1 Introduction</a></li>
             <li><a href="javabasiclessons/lessons/day2.html" onclick="loadPage('javabasiclessons/lessons/day2.html');  return false;">Lesson 2 Data Types</a> </li>
         <li>
             <a href="javabasiclessons/lessons/day3.html" onclick="loadPage('javabasiclessons/lessons/day3.html');  return false;"
