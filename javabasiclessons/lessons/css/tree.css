@@ -5,36 +5,37 @@ body {
 #tree {
     width: 200px;
     border-right: 1px solid #000;
-    padding: 10px;
+}
+
+.tree {
+    background-image: url('../images/homebackground.jpg');
+    color: #efbd06;
 }
 
 #content {
     flex-grow: 1;
     padding: 10px;
 }
+
 .tree-nav-links {
     position: sticky;
     top: 0;
-    color: white;
-  line-height: 1.6; 
-    /* padding: 10px 0; */
     z-index: 1000;
     /* Ensures the menu stays on top of other elements */
-    /* text-align: right; */
-  
-  }
-ul {
-    list-style-type: none;
+}
+
+.tree-nav-links ul {
     padding-left: 20px;
-    color: white;
+    line-height: 1;
 
 }
 
-li {
+/* .tree-nav-links ul li {
     margin-bottom: 5px;
-}
-.ul li a {
+} */
+
+.tree-nav-links a {
     color: white;
     text-decoration: underline;
-    margin: 0 10px;
-  }
+    font-size: small;
+}

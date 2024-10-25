@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="javabasiclessons/lessons/style.css">
-    <link rel="stylesheet" href="javabasiclessons/lessons/tree.css">
+    <link rel="stylesheet" href="javabasiclessons/lessons/css/style.css">
+    <link rel="stylesheet" href="javabasiclessons/lessons/css/tree.css">
     <script>
         function loadPage(url) {
             fetch(url)
@@ -18,10 +18,10 @@
     </script>
 </head>
 
-<body >
+<body onload="loadPage('javabasiclessons/lessons/Home.html');  return false;">
     
     <div id="tree" class="tree">    
-        <nav class="nav-links">
+        <nav class="tree-nav-links ">
         <h3>Java basics</h3>
         <ul>
             <li> <a href="javabasiclessons/lessons/day1.html'" onclick="loadPage('javabasiclessons/lessons/day1.html');  return false;" rel="noopener noreferrer">Lesson 1 Introduction</a></li>
@@ -39,7 +39,10 @@
     <div id="content" >
         <!-- Loaded content will appear here -->
     </div>
-    <script src="javabasiclessons/lessons/tree.js"></script>
+    <script src="javabasiclessons/lessons/scripts/tree.js"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>
