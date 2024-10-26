@@ -1,7 +1,8 @@
 .tree {
     background-image: url('../images/homebackground.jpg');
     color: #efbd06;
-    width: 350px;
+    padding-left: 20px;
+    width: 150px;
     border-right: 1px solid #000;
 }
 
@@ -16,32 +17,27 @@
     /* Ensures the menu stays on top of other elements */
 }
 .tree-nav-links h3{
-    text-align: center;
     line-height: .5;
 }
 .image-container {
     display: flex;
-    justify-content: center; /* Centers the image horizontally */
+    justify-content: left; /* Centers the image horizontally */
     align-items: center; /* Centers the image vertically */
     height: 20px; /* Set your desired height */
 }
 
 .image-container img {
-    max-width: 100%; /* Ensures the image scales within the container */
-    max-height: 100%; /* Ensures the image scales within the container */
+    max-width: 80%; /* Ensures the image scales within the container */
+    max-height: 80%; /* Ensures the image scales within the container */
 }
 
 .tree-nav-links ul {
-    padding-left: 20px;
-    line-height: 1.6;
+    padding-left: 5px;
+    line-height: 1;
 }
 
 .tree-nav-links a {
     color: white;
     text-decoration: none;
     font-size: small;
-}
-.tree-nav-links img{
-    width: 100px;
-    height: 100px;
 }

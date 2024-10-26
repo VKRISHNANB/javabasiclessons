@@ -7,7 +7,13 @@ body {
   opacity: 1;
   filter: none;
   display: flex;
-  flex-direction: column;
+}
+.logo-container{
+   display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
 }
 .logo {
   width: 75px;
@@ -15,6 +21,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  /* margin: 10px; Adjust as needed */
   margin-right: 10px;
   margin-top: 10px;
 }
@@ -34,21 +41,4 @@ body {
 
 .title {
   color: #0b232d;
-}
-
-.container {
-  display: flex;
-  justify-content: left; /* Adjusts spacing between boxes */
-}
-
-.box {
-  width: 100%; /* Adjust width as needed */
-}
-.content {
-  flex: 1; /* This makes the content take up remaining space */
-}
-
-.responsive-img {
-  width: 100%;
-  margin-top: 5px;
 }
