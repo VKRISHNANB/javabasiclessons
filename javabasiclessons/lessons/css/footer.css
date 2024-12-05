@@ -1,0 +1,35 @@
+    /* Footer Styles */
+    footer {
+        background-color: #0b232d;
+        /* Dark green background */
+        color: #efbd06;
+        text-align: center;
+        padding: 30px 10px;
+        /* Increased padding for better spacing */
+        border-top: 2px solid #c59b05;
+        /* Top border for styling */
+        border-bottom: 2px solid #c59b05;
+        /* Bottom border for styling */
+        width: 100%;
+        /* Stretch to full width */
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    /* Horizontal line styling */
+    footer .line {
+        background-color: #c59b05;
+        height: 2px;
+        /* Thickness of the line */
+        width: 90%;
+        /* Width of the lines */
+        margin: 15px auto;
+        /* Center alignment with spacing */
+    }
+
+
+    /* Footer copyright styling */
+    footer .copyright {
+        margin: 10px 0;
+        font-size: 16px;
+    }
