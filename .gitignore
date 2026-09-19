@@ -6,7 +6,7 @@
 
 #folders
 .vscode/
-bck/
+/bck/
 .settings/
 bin/
 
