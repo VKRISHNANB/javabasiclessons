@@ -6,6 +6,10 @@
 
 #folders
 .vscode/
+bck/
+.settings/
+bin/
+
 
 # BlueJ files
 *.ctxt

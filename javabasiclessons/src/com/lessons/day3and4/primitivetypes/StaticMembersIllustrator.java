@@ -1,5 +1,5 @@
-package com.lessons.day3.primitivetypes;
-public class DemoC
+package com.lessons.day3and4.primitivetypes;
+public class StaticMembersIllustrator
 {
 	/** class variable */
 	static int gx=67765656;
@@ -10,7 +10,7 @@ public class DemoC
 	public void doSomeTask()
 	{
 		/** Accessing static global variable - Class Variables */
-		System.out.println( "gx=" + DemoC.gx);		
+		System.out.println( "gx=" + StaticMembersIllustrator.gx);		
 		/** Accessing instance global variable from a non static method */
 		System.out.println( "data1=" + data1);
 		System.out.println( "data2=" + data2);

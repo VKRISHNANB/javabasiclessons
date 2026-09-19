@@ -1,14 +1,17 @@
-package com.lessons.day3.primitivetypes;
+package com.lessons.day3and4.primitivetypes;
 
-public class DemoD {
+// Parsing String value to int value
+public class StringParsingIllustrator {
 	public static void main(String[] args) {
-		String s1="12345";
-		String s2="500";
-		System.out.println("s1="+s1+"   s2="+s2);
+		String firstString = "12345";
+		String secondString = "500";
+		System.out.println("firstString=" + firstString + " secondString=" + secondString);
+		System.out.println(firstString + secondString);
 		/** String to int */
-		int c1 = Integer.parseInt( s1 );
+		int firstNumber = Integer.parseInt(firstString);
 		/** String to int */
-		int c2 = Integer.parseInt( s2 );
-		System.out.println("c1="+c1+"   c2="+c2);
+		int secondNumber = Integer.parseInt(secondString);
+		System.out.println("firstNumber=" + firstNumber + "   secondNumber=" + secondNumber);
+		System.out.println(firstNumber + secondNumber);
 	}
 }

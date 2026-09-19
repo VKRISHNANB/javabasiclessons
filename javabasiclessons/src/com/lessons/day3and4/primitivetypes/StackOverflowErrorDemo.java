@@ -1,4 +1,4 @@
-package com.lessons.day3.primitivetypes;
+package com.lessons.day3and4.primitivetypes;
 
 public class StackOverflowErrorDemo {
 

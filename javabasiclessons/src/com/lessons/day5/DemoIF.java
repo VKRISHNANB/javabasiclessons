@@ -1,4 +1,4 @@
-package com.lessons.day4;
+package com.lessons.day5;
 
 import java.util.Scanner;
 
@@ -16,8 +16,8 @@ public class DemoIF {
 		sc.close();
 	}
 //	Income up to Rs 2,50,000*	No tax
-//	Income from Rs 2,50,000 – Rs 5,00,000	5%
-//	Income from Rs 5,00,000 – 10,00,000	20%
+//	Income from Rs 2,50,000 ï¿½ Rs 5,00,000	5%
+//	Income from Rs 5,00,000 ï¿½ 10,00,000	20%
 //	Income more than Rs 10,00,000	30%	
 	public static void taxcalulationA()
 	{

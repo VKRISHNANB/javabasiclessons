@@ -1,4 +1,4 @@
-package com.lessons.day4;
+package com.lessons.day5;
 
 public class DemoGForloops {
 	public static void m1() 

@@ -1,4 +1,4 @@
-package com.lessons.day4;
+package com.lessons.day1;
 public class DemoA
 {// beginning of a class
 	public static void main(String args[]) 
