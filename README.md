@@ -2,4 +2,4 @@
 
 Time to brew some Java ☕
 
-[Lessons ](https://vkrishnanb.github.io/javabasiclessons/)
+[Lessons ](https://vkrishnanb.github.io/javabasiclessons/index.html)
