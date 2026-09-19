@@ -8,6 +8,7 @@
 .vscode/
 /bck/
 /.settings/
+.settings/
 bin/
 
 
